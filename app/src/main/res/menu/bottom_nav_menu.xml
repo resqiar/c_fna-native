@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/lca_nav_item"
+        android:icon="@drawable/ic_lca"
+        android:title="@string/reports" />
+
+    <item
+        android:id="@+id/nearby_nav_item"
+        android:icon="@drawable/ic_nearby"
+        android:title="@string/nearby" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:enabled="false"
+        android:title="" />
+
+    <item
+        android:id="@+id/profile_nav_item"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/settings_nav_item"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+</menu>

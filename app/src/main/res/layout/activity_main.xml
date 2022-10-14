@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    Layout to hold all the fragments -->
+    <FrameLayout
+        android:id="@+id/hostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--     Bottom Navigation Bar -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#F44336"
+        app:fabCradleMargin="8dp"
+        app:fabCradleRoundedCornerRadius="16dp">
+
+        <!-- Bottom Navigation View (Items / Menu) -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_app_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:itemIconTint="@drawable/bottom_nav_selector"
+            app:itemTextColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+<!--     Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        app:tint="@color/white"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottom_app_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
